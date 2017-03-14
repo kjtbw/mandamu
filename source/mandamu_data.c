@@ -1,10 +1,11 @@
 #include "mandamu.h"
 
 
-struct monster dragon = {"dragon", 9, "dragon_lance", "deck"};
 
+struct monster MONSTER[MONSTER_MAX] ={
+	 {"dragon", 9, "dragon_lance", "deck"},
+};
 
-
-
-struct weapon dragon_lance = {"dragon_lance","equipped"};
-
+struct  weapon WEAPON[WEAPON_MAX] = {
+	{"dragon_lance","equipped"},
+};

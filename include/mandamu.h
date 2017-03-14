@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 #define PNII -1
 #define STR_MAX 256
+#define MONSTER_MAX 13
+#define WEAPON_MAX 6
 
 
 extern int PLAYER_NUMBER;
@@ -17,14 +20,11 @@ struct weapon{
 	char name[STR_MAX];
 	char place[STR_MAX];
 	};
-	
-	
-	
-
-extern monster dragon;
 
 
-extern weapon dragon_lance;
+extern struct monster MONSTER[MONSTER_MAX];
+extern struct  weapon WEAPON[WEAPON_MAX] ;
+
 
 void initialize();
 int print_error(int n);

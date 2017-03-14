@@ -15,8 +15,8 @@ int main(void){
  		else checker =1;
 	}while(checker < 1);
 	PLAYER_NUMBER=atoi(buf);
-	printf("%d\n",dragon.atk);
-	printf("%s\n",dragon_lance.place);
+	printf("%d\n",MONSTER[0].atk);
+	printf("%s\n",WEAPON[0].place);
 	
 }
 
