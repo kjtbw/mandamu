@@ -1,9 +1,9 @@
 #include "mandamu.h"
 
-
+int PLAYER_NUMBER=0;
 
 int main(void){
-	char buf[256];
+	char buf[STR_MAX];
 	int checker=0;
 	
 	initialize();
@@ -15,6 +15,9 @@ int main(void){
  		else checker =1;
 	}while(checker < 1);
 	PLAYER_NUMBER=atoi(buf);
+	printf("%d\n",dragon.atk);
+	printf("%s\n",dragon_lance.place);
+	
 }
 
 void initialize(){
